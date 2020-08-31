@@ -28,6 +28,9 @@ export default function SectionHero() {
 	return (
 		<div className="row">
 			<div className="container">
+				<h2 className="product-carousel-title text-black text-center">
+					New Arrivals
+				</h2>
 				<div className="product-carousel">
 					<Slider {...carousel_settings}>
 						<div>

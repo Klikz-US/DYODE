@@ -569,7 +569,7 @@ h6 {
 @media only screen and (max-width: 497px) {
 	.category {
 		grid-template-columns: 50% 50% 50%;
-		grid-template-rows: 30% 30%;
+		grid-template-rows: 50% 50%;
 	}
 
 	.category-inner:last-child {
@@ -593,6 +593,18 @@ h6 {
 	position: relative;
 	max-height: 100%;
 	overflow: hidden;
+}
+
+.category-image {
+	background-size: cover;
+	padding: 65% 0;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 497px) {
+	.category-inner:last-child .category-image {
+		padding: 33% 0;
+	}
 }
 
 .category-title {

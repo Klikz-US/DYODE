@@ -10,14 +10,10 @@ export default function SectionCategory() {
 			<div className="container category">
 				<div className="category-inner">
 					<div className="category-wrapper">
-						<div className="category-image">
-							<img
-								src={category_women}
-								width="100%"
-								height="auto"
-								alt="Women"
-							/>
-						</div>
+						<div
+							className="category-image"
+							style={{ backgroundImage: "url(" + category_women + ")" }}
+						></div>
 						<div className="category-title bg-main color-white text-center">
 							<h2>Women</h2>
 						</div>
@@ -25,9 +21,10 @@ export default function SectionCategory() {
 				</div>
 				<div className="category-inner">
 					<div className="category-wrapper">
-						<div className="category-image">
-							<img src={category_men} width="100%" height="auto" alt="Men" />
-						</div>
+						<div
+							className="category-image"
+							style={{ backgroundImage: "url(" + category_men + ")" }}
+						></div>
 						<div className="category-title bg-main color-white text-center">
 							<h2>Men</h2>
 						</div>
@@ -35,14 +32,10 @@ export default function SectionCategory() {
 				</div>
 				<div className="category-inner">
 					<div className="category-wrapper">
-						<div className="category-image">
-							<img
-								src={category_accessories}
-								width="100%"
-								height="auto"
-								alt="Accessories"
-							/>
-						</div>
+						<div
+							className="category-image"
+							style={{ backgroundImage: "url(" + category_accessories + ")" }}
+						></div>
 						<div className="category-title bg-main color-white text-center">
 							<h2>Accessories</h2>
 						</div>
