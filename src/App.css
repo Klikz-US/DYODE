@@ -165,20 +165,32 @@ a,
 span,
 button {
 	font-family: Lato-Light;
-	font-size: 18px;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 497px) {
+	body,
+	div,
+	p,
+	a,
+	span,
+	button {
+		font-family: Lato-Light;
+		font-size: 12px;
+	}
 }
 
 h1,
 h2,
-h3 {
+h3,
+h6 {
 	font-family: Pacifico;
 	font-weight: 400;
 	margin: 5px 0 5px 0;
 }
 
 h4,
-h5,
-h6 {
+h5 {
 	font-family: Lato-Light;
 	font-weight: 300;
 	margin: 5px 0 5px 0;
@@ -206,7 +218,7 @@ h5 {
 }
 
 h6 {
-	font-size: 14px;
+	font-size: 18px;
 }
 
 @media only screen and (max-width: 497px) {
@@ -269,6 +281,10 @@ h6 {
 	margin: 10px;
 }
 
+.mt-1 {
+	margin-top: 10px;
+}
+
 .mt-2 {
 	margin-top: 20px;
 }
@@ -276,6 +292,10 @@ h6 {
 .text-center {
 	width: 100%;
 	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
 }
 
 .navbar .wrapper {
@@ -558,4 +578,50 @@ h6 {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+
+.product-carousel {
+	padding: 0 40px;
+}
+
+.product-carousel-inner {
+	padding: 20px;
+}
+
+.product-carousel .slick-next:before {
+	opacity: 1;
+	background-image: url("./assets/icons/Arrow_Right.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+	font-size: 0;
+	padding: 24px 20px 0 0;
+}
+
+.product-carousel .slick-prev:before {
+	opacity: 1;
+	background-image: url("./assets/icons/Arrow_Left.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+	font-size: 0;
+	padding: 24px 20px 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.product-carousel {
+		padding: 0 20px;
+	}
+
+	.product-carousel-inner {
+		padding: 5px;
+	}
+
+	.product-carousel .slick-next:before {
+		padding: 16px 20px 0 0;
+	}
+
+	.product-carousel .slick-prev:before {
+		padding: 16px 20px 0 0;
+	}
 }
