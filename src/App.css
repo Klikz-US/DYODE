@@ -146,6 +146,72 @@
 }
 
 /**
+ * Fonts
+ */
+@font-face {
+	font-family: Pacifico;
+	src: url("./assets/fonts/Pacifico.ttf");
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url("./assets/fonts/Lato-Light.ttf");
+}
+
+body,
+div,
+p,
+a {
+	font-family: Lato-Light;
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: Pacifico;
+	font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+	font-family: Lato-Light;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 497px) {
+	h5 {
+		font-size: 14px;
+	}
+}
+
+/**
  * Colors
  */
 .bg-main {
@@ -184,7 +250,7 @@
 }
 
 .m-1 {
-	margin: 5px;
+	margin: 10px;
 }
 
 .text-center {
@@ -236,7 +302,6 @@
 	-ms-user-select: none;
 	user-select: none;
 	width: 30px;
-	color: #3b67a7;
 }
 
 .expand_icon-path.is-bottom,
@@ -302,4 +367,96 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	height: auto;
+}
+
+/**
+ * Footer
+ */
+
+.footer-container .wrapper {
+	-webkit-box-pack: space-between;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: space-between;
+	justify-content: space-between;
+	padding: 0 30px 30px 30px;
+}
+
+.footer-menu-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: flex-start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: flex-start;
+	justify-content: flex-start;
+}
+
+@media only screen and (max-width: 497px) {
+	.footer-container .wrapper {
+		display: block;
+	}
+
+	.footer-menu-wrap {
+		display: block;
+	}
+
+	.footer-menu-1 {
+		margin-right: 0px;
+	}
+}
+
+.footer-menu-wrap ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+@media only screen and (max-width: 497px) {
+	.footer-menu-wrap ul:not(.expanded) {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+.footer-menu-wrap li a {
+	color: #d8d8d8;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.footer-menu-wrap li a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu {
+	position: relative;
+	margin-right: 50px;
+}
+
+.footer-menu-accordion {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 33px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 497px) {
+	.footer-menu {
+		margin-right: 0px;
+	}
+}
+
+.social-share-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.social-share {
+	margin-right: 20px;
 }

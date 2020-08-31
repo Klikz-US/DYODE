@@ -13,9 +13,9 @@ export default function Header() {
 			<div className="row bg-black">
 				<div className="container topbar">
 					<div className="wrapper">
-						<h4 className="color-grey text-center m-1">
+						<h5 className="color-grey text-center m-1">
 							Free Shipping on All Orders Over $75
-						</h4>
+						</h5>
 					</div>
 				</div>
 			</div>
@@ -56,7 +56,7 @@ export default function Header() {
 							</a>
 						</div>
 						<a className="logo m-1" href="/">
-							<img src={logo} width="auto" height="50" alt="logo" />
+							<img src={logo} width="auto" height="60" alt="logo" />
 						</a>
 						<div className="menu-item sm-show">
 							<a className="color-grey" href="javascript:;">
