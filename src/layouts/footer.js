@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import facebook_icon from "../assets/image/facebook.png";
-import instagram_icon from "../assets/image/instagram.png";
-import twitter_icon from "../assets/image/twitter.png";
+import facebook_icon from "../assets/icons/facebook.png";
+import instagram_icon from "../assets/icons/instagram.png";
+import twitter_icon from "../assets/icons/twitter.png";
 
 export default function Footer() {
 	const [expanded1, setExpanded1] = useState(false);
@@ -32,22 +32,22 @@ export default function Footer() {
 								<h3 className="color-white">Customer Service</h3>
 								<ul className={`color-grey ${expanded1 ? "expanded" : ""}`}>
 									<li>
-										<a href="javascript:;">Accessibility</a>
+										<a href="#">Accessibility</a>
 									</li>
 									<li>
-										<a href="javascript:;">Contact Us</a>
+										<a href="#">Contact Us</a>
 									</li>
 									<li>
-										<a href="javascript:;">Return Policy</a>
+										<a href="#">Return Policy</a>
 									</li>
 									<li>
-										<a href="javascript:;">FAQ</a>
+										<a href="#">FAQ</a>
 									</li>
 									<li>
-										<a href="javascript:;">Gift Certification</a>
+										<a href="#">Gift Certification</a>
 									</li>
 									<li>
-										<a href="javascript:;">Wishlist</a>
+										<a href="#">Wishlist</a>
 									</li>
 								</ul>
 							</div>
@@ -61,16 +61,16 @@ export default function Footer() {
 								<h3 className="color-white">Company</h3>
 								<ul className={`color-grey ${expanded2 ? "expanded" : ""}`}>
 									<li>
-										<a href="javascript:;">About Us</a>
+										<a href="#">About Us</a>
 									</li>
 									<li>
-										<a href="javascript:;">Careers</a>
+										<a href="#">Careers</a>
 									</li>
 									<li>
-										<a href="javascript:;">Press</a>
+										<a href="#">Press</a>
 									</li>
 									<li>
-										<a href="javascript:;">Affiliates</a>
+										<a href="#">Affiliates</a>
 									</li>
 								</ul>
 							</div>

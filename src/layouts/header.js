@@ -28,7 +28,7 @@ export default function Header() {
 								className="color-white sm-hide"
 								data-role="expand_menu"
 								rel="noopener noreferrer"
-								href="javascript:;"
+								href="#"
 								onClick={menu_toggle}
 							>
 								<svg className="expand_icon" role="img" viewBox="0 0 24 19">
@@ -59,22 +59,22 @@ export default function Header() {
 							<img src={logo} width="auto" height="60" alt="logo" />
 						</a>
 						<div className="menu-item sm-show">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Women
 							</a>
 						</div>
 						<div className="menu-item sm-show">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Men
 							</a>
 						</div>
 						<div className="menu-item sm-show">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Accessories
 							</a>
 						</div>
 						<div className="menu-item sm-show">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Sale!
 							</a>
 						</div>
@@ -83,7 +83,7 @@ export default function Header() {
 								className="cart-toggle sm-hide"
 								data-role="expand_cart"
 								rel="noopener noreferrer"
-								href="javascript:;"
+								href="#"
 							>
 								<CgShoppingCart size={24} className="color-white" />
 							</a>
@@ -93,22 +93,22 @@ export default function Header() {
 				<div id="navbar_mobile" className="container navbar-mobile sm-hide">
 					<div className="wrapper d-column ">
 						<div className="menu-item">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Women
 							</a>
 						</div>
 						<div className="menu-item">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Men
 							</a>
 						</div>
 						<div className="menu-item">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Accessories
 							</a>
 						</div>
 						<div className="menu-item">
-							<a className="color-grey" href="javascript:;">
+							<a className="color-grey" href="#">
 								Sale!
 							</a>
 						</div>

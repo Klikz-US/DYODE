@@ -161,7 +161,9 @@
 body,
 div,
 p,
-a {
+a,
+span,
+button {
 	font-family: Lato-Light;
 	font-size: 18px;
 }
@@ -171,6 +173,7 @@ h2,
 h3 {
 	font-family: Pacifico;
 	font-weight: 400;
+	margin: 5px 0 5px 0;
 }
 
 h4,
@@ -178,10 +181,11 @@ h5,
 h6 {
 	font-family: Lato-Light;
 	font-weight: 300;
+	margin: 5px 0 5px 0;
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 42px;
 }
 
 h2 {
@@ -193,7 +197,7 @@ h3 {
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 28px;
 }
 
 h5 {
@@ -206,6 +210,14 @@ h6 {
 }
 
 @media only screen and (max-width: 497px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
 	h5 {
 		font-size: 14px;
 	}
@@ -251,6 +263,10 @@ h6 {
 
 .m-1 {
 	margin: 10px;
+}
+
+.mt-2 {
+	margin-top: 20px;
 }
 
 .text-center {
@@ -378,7 +394,7 @@ h6 {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: space-between;
 	justify-content: space-between;
-	padding: 0 30px 30px 30px;
+	padding: 30px;
 }
 
 .footer-menu-wrap {
@@ -459,4 +475,32 @@ h6 {
 
 .social-share {
 	margin-right: 20px;
+}
+
+/**
+ * Hero
+ */
+.hero-slider-wrap {
+	padding: 15% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.button {
+	padding: 10px 20px;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.hero .slick-dots {
+	bottom: 25px;
+}
+
+.hero .slick-dots li button {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.hero .slick-dots li.slick-active button {
+	background: rgba(255, 255, 255, 1);
 }
