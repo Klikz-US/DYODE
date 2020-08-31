@@ -189,7 +189,7 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 32px;
 }
 
 h3 {
@@ -212,6 +212,10 @@ h6 {
 @media only screen and (max-width: 497px) {
 	h1 {
 		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 18px;
 	}
 
 	h4 {
@@ -497,10 +501,61 @@ h6 {
 	bottom: 25px;
 }
 
+.hero .slick-dots li button:before {
+	content: none;
+}
+
 .hero .slick-dots li button {
 	background: rgba(255, 255, 255, 0.4);
+	width: 15px;
+	height: 15px;
 }
 
 .hero .slick-dots li.slick-active button {
 	background: rgba(255, 255, 255, 1);
+}
+
+/**
+ * Category
+ */
+.category {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+@media only screen and (max-width: 497px) {
+	.category {
+		grid-template-columns: 50% 50% 50%;
+		grid-template-rows: 30% 30%;
+	}
+
+	.category-inner:last-child {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+.category-inner {
+	position: relative;
+	padding: 20px;
+}
+
+@media only screen and (max-width: 497px) {
+	.category-inner {
+		padding: 10px;
+	}
+}
+
+.category-wrapper {
+	position: relative;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+.category-title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
