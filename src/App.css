@@ -165,6 +165,11 @@
 	src: url("./assets/fonts/Lato-Light.ttf");
 }
 
+@font-face {
+	font-family: Lato-Regular;
+	src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
 body,
 div,
 p,
@@ -174,11 +179,12 @@ span {
 	font-size: 16px;
 }
 
+input,
 .button {
-	font-family: Lato-Light;
-	padding: 10px 20px;
+	font-family: Lato-Regular;
+	padding: 8px 15px;
 	border: none;
-	font-size: 14px;
+	font-size: 16px;
 	cursor: pointer;
 }
 
@@ -188,10 +194,10 @@ span {
 	p,
 	a,
 	span {
-		font-family: Lato-Light;
 		font-size: 12px;
 	}
 
+	input,
 	.button {
 		padding: 7px 12px;
 		font-size: 10px;
@@ -305,6 +311,10 @@ h6 {
 
 .mt-2 {
 	margin-top: 20px;
+}
+
+.mb-3 {
+	margin-bottom: 30px;
 }
 
 .text-center {
@@ -640,4 +650,59 @@ h6 {
 .cta {
 	padding-top: 15%;
 	padding-bottom: 15%;
+}
+
+.instagram {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.instagram-wrapper {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.instagram-inner {
+	padding: 10px;
+}
+
+.newsletter {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.newsletter-text {
+	width: 50%;
+}
+
+.newsletter-text p {
+	margin: 0;
+	font-family: Lato-Regular;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+}
+
+.newsletter-form {
+	width: 50%;
+	text-align: center;
+}
+
+.newsletter-email {
+	width: 40%;
+	padding: 6px 15px;
+	background-color: white;
+	outline: none;
+	margin-right: 8px;
+	font-size: 18px;
+	line-height: 18px;
+	border: 2px solid transparent;
+}
+
+.newsletter-submit {
+	width: 25%;
+	border: 2px solid #fff;
+	padding: 8px 15px;
+	font-family: Pacifico;
+	font-size: 18px;
+	line-height: 1;
 }
