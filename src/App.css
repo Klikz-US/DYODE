@@ -94,6 +94,13 @@
 	justify-content: flex-start;
 }
 
+.f-end {
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
 .f-center {
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
@@ -162,10 +169,17 @@ body,
 div,
 p,
 a,
-span,
-button {
+span {
 	font-family: Lato-Light;
 	font-size: 16px;
+}
+
+.button {
+	font-family: Lato-Light;
+	padding: 10px 20px;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 497px) {
@@ -173,10 +187,14 @@ button {
 	div,
 	p,
 	a,
-	span,
-	button {
+	span {
 		font-family: Lato-Light;
 		font-size: 12px;
+	}
+
+	.button {
+		padding: 7px 12px;
+		font-size: 10px;
 	}
 }
 
@@ -223,7 +241,7 @@ h6 {
 
 @media only screen and (max-width: 497px) {
 	h1 {
-		font-size: 30px;
+		font-size: 24px;
 	}
 
 	h2 {
@@ -231,7 +249,7 @@ h6 {
 	}
 
 	h4 {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	h5 {
@@ -510,13 +528,6 @@ h6 {
 	background-repeat: no-repeat;
 }
 
-.button {
-	padding: 10px 20px;
-	border: none;
-	font-size: 14px;
-	cursor: pointer;
-}
-
 .hero .slick-dots {
 	bottom: 25px;
 }
@@ -624,4 +635,9 @@ h6 {
 	.product-carousel .slick-prev:before {
 		padding: 16px 20px 0 0;
 	}
+}
+
+.cta {
+	padding-top: 15%;
+	padding-bottom: 15%;
 }
