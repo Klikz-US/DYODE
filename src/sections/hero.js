@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import sliderimage_1 from "../assets/images/Hero_Image_1.jpg";
 import sliderimage_2 from "../assets/images/Hero_Image_2.jpg";
-import sliderimage_3 from "../assets/images/Hero_Image_1.jpg";
-import sliderimage_4 from "../assets/images/Hero_Image_2.jpg";
 
 export default function SectionHero() {
 	const hero_settings = {
@@ -25,7 +23,10 @@ export default function SectionHero() {
 					<div>
 						<div
 							className="hero-slider-wrap"
-							style={{ backgroundImage: "url(" + sliderimage_1 + ")" }}
+							style={{
+								backgroundImage: "url(" + sliderimage_1 + ")",
+								backgroundPosition: "right",
+							}}
 						>
 							<div className="hero-slider-inner container">
 								<h1 className="slider-title color-white">Title Goes Here</h1>
@@ -59,7 +60,10 @@ export default function SectionHero() {
 					<div>
 						<div
 							className="hero-slider-wrap"
-							style={{ backgroundImage: "url(" + sliderimage_1 + ")" }}
+							style={{
+								backgroundImage: "url(" + sliderimage_1 + ")",
+								backgroundPosition: "right",
+							}}
 						>
 							<div className="hero-slider-inner container">
 								<h1 className="slider-title color-white">Title Goes Here</h1>

@@ -10,6 +10,7 @@ export default function SectionCalltoAction() {
 				backgroundImage: "url(" + cta_bg + ")",
 				backgroundSize: "cover",
 				backgroundRepeat: "no-repeat",
+				backgroundPosition: "center",
 			}}
 		>
 			<div className="container cta">
